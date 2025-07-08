@@ -60,7 +60,7 @@
 
 		  <form action="https://mpesa-prompt.onrender.com/stk_push.php" method="POST">
 		  	<label>enter phone number</label><br>
-		  	 <input type="number" placeholder="your phone number"><br><br>
+		  	 <input type="number" placeholder="your phone number" name="phone"><br><br>
 		  	<input type="submit" class="button" value="buy">
 		  </form>
   
