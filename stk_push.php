@@ -17,7 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     echo "Payment prompt sent to $phone<br>";
 
     // Echo Safaricom response
-    echo $response;
+ 
 
 } else {
     echo "Please submit a phone number.";
