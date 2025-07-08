@@ -3,6 +3,23 @@
 date_default_timezone_set('Africa/Nairobi');
 
 // Credentials
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $phone = $_POST['phone'];
+
+    // Format phone correctly
+    $phone = preg_replace('/\D/', '', $phone);
+    if (strlen($phone) === 9) {
+        $phone = '254' . $phone;
+    }
+
+    // Now call your STK push logic here
+    // Example:
+    // sendSTKPush($phone, $amount);
+
+    echo "Payment prompt sent to $phone";
+} else {
+    echo "Please submit a phone number.";
+}
 
 $consumerkey="r0vpx85kSDNu7QmArky40rfpq84yecMQ8fn3BnqMjOhUHLSk";
 $consumerSecret="WFXRgkpSCmmifuZveTntxvGpmp5xPWh6JnlxmHALCKH9VGJpUEqGhAAu7w0Hp3Hc";
