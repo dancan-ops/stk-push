@@ -1,4 +1,4 @@
 <?php
-header("Location: welcome.php");
+header("Location: stk_push.php");
 exit;
 ?>
