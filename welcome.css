@@ -1,0 +1,251 @@
+@media only screen and (min-width: 800px){
+			body{
+			overflow-x: hidden;
+			  background-image: url('frontpage.jpg') !important;
+		  background-size: cover!important;
+		  background-repeat: no-repeat !important;
+		  background-position: fixed !important;
+			}
+
+		.head {
+		  position: fixed;
+		  top: 0;
+		  left: 0;
+		  width: 96vw;
+		  height: 4vh !important;
+		  display: flex;
+		  align-items: center;
+		  justify-content: space-between;
+		  padding: 2vw;
+		  background-color: white;
+		  z-index: 1000; /* ensures it stays above everything. this is new I have to understand it*/
+		}
+
+		.head a{
+			color: black;
+			text-decoration: none;
+		}
+
+		.plan-box {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			align-content: center;
+		  background-color: white;
+		  width: 24vw !important;
+		  aspect-ratio: 1/1;
+		  transition: transform 0.2s ease !important;
+		  margin: 16px !important;
+		  box-shadow: 16px 12px 4px rgba(0, 0, 0, 0.3) !important;
+		}
+
+		.plan-box:hover {
+		  transform: translateY(-8px);
+		}
+
+		.plan-box small{
+			margin-top: 12vh !important;
+			margin-left: -16vw !important;
+		}
+		
+		.plan-box h2{
+			 text-align: center;
+			color: #1889F5;
+		}
+
+		.plan-box p{
+			margin-left: 12vw !important;
+		
+		}
+
+		.plan-box button{
+			background-color: #145EA3;
+			border: none;
+			margin-left: 12VW !important;
+			width: 8vw !important;
+			height: 4vh;
+			color: white;
+			border-radius: 4px;
+		} 
+
+		.plan-container {
+		   display: flex;
+		  flex-wrap: wrap;          /* allow boxes to wrap */
+		  gap: 20px;
+		  justify-content: center;
+       /* don't grow too wide */
+		  overflow-x: hidden;       /* hide any horizontal overflow */
+		  padding: 10px;
+		  box-sizing: border-box;
+
+		
+		}
+
+		#advertisments{
+			height: 24vh !important;
+			background-color: #145EA3;
+			max-width: 100vw;
+			margin-top: 10vh;
+			margin-left: -1vw;
+			 font-size: 28px !important;
+			 color: white;
+            white-space: wrap;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+		}
+
+		.head h1 {
+			margin-top: -1vh;
+		}
+		}
+
+		body{
+			overflow-x: hidden;
+			background-image: url('frontpageSmall.jpg');
+			background-position: fixed;
+			background-repeat: no-repeat;
+		}
+
+		.plan-container{
+			display: flex;
+			flex-wrap: wrap;
+			gap: 16px;
+			justify-content: center;
+			align-items: center;
+			align-content: center;
+		
+
+		}
+
+		.plan-box{
+			width: 36vw;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			align-content: center;
+			aspect-ratio: 1/1;
+			transition: transform 0.2s ease;
+			box-shadow: 12px 8px 4px rgba(0, 0, 0, 0.3);
+			padding: 8px;
+			background-color: white;
+		}
+
+
+		.plan-box:hover {
+		  transform: translateY(-8px);
+		}
+
+		.plan-box small{
+			margin-top: 4vh;
+			margin-left: -20vw;
+		}
+
+		.plan-box h2{
+			text-align: center;
+			color: #1889F5;
+		}
+
+		.plan-box p{
+			margin-left: 20vw ;
+		}
+
+		.plan-box button{
+			background-color: #145EA3;
+			border: none;
+			margin-left: 16VW;
+			width: 12vw;
+			height: 4vh;
+			color: white;
+			border-radius: 4px;
+		} 
+
+		#advertisments{
+			height: 20vh;
+			background-color: #145EA3;
+			width: 100vw;
+			margin-top: 10vh;
+			margin-left: -2vw;
+			 font-size: 24px;
+			 color: white;
+            font-family: sans-serif;
+            border-right: 2px solid black;
+            white-space: wrap;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+		}
+
+		.head {
+		  position: fixed;
+		  top: 0;
+		  left: 0;
+		  width: 96vw;
+		  height: 10vh;
+		  display: flex;
+		  align-items: center;
+		  justify-content: space-between;
+		  padding: 2vw;
+		  padding-left: 2vw;
+		  background-color: white;
+		  z-index: 1000; /* ensures it stays above everything. this is new I have to understand it*/
+		}
+
+		.head a{
+			text-decoration: none;
+			margin-top: -10px;
+		}
+
+		.button{
+			background-color: #145EA3;
+			border: none;
+			width: 12vw;
+			height: 4vh;
+			color: white;
+			border-radius: 4px;
+		} 
+
+		form{
+			margin-left: 2vw;
+		}
+
+
+		/* Overlay behind the popover */
+#overlay {
+  display: none;
+  position: fixed;
+  top: 0; 
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+  z-index: 1500;
+}
+
+/* Popover styles (centered and above the overlay) */
+#popover {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+  background: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  z-index: 2000;
+  max-width: 90vw;
+  text-align: center;
+  border-radius: 8px;
+}
+input{
+	height: 24px;
+	width: 200px;
+	margin:4px;
+}

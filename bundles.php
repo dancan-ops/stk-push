@@ -191,13 +191,13 @@ if ($result->num_rows > 0) {
         echo "
         <div class='plan-box' id='plan-$id'>
         <div style='display:flex'>
-        <button onclick='editPlan($id, \"{$row['speed']}\", {$row['duration_minutes']}, {$row['price']})' id='edit'>
+        <button title='edit' onclick='editPlan($id, \"{$row['speed']}\", {$row['duration_minutes']}, {$row['price']})' id='edit' >
         <img src='edit.svg'>
     </button>
 
   <form method='POST' action='delete.php' onsubmit='return confirm(\"Delete this bundle?\")'>
     <input type='hidden' name='id' value='$id'>
-    <button type='submit' style='background: none; border: none; cursor: pointer; margin-top: 10px; width:10px;'>
+    <button type='submit' title='delete' style='background: none; border: none; cursor: pointer; margin-top: 10px; width:10px;'>
   <img src='delete.svg' alt='Delete' style='width: 24px; height: 24px; margin-left: -12vw'>
 </button>
 
