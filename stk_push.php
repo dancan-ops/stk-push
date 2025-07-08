@@ -12,14 +12,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $phone = '254' . $phone;
     }
 
-    // Now call your STK push logic here
-    // Example:
-    // sendSTKPush($phone, $amount);
+    // ...move ALL the STK logic inside here
 
-    echo "Payment prompt sent to $phone";
+    echo "Payment prompt sent to $phone<br>";
+
+    // Echo Safaricom response
+    echo $response;
+
 } else {
     echo "Please submit a phone number.";
 }
+
 
 $consumerkey="r0vpx85kSDNu7QmArky40rfpq84yecMQ8fn3BnqMjOhUHLSk";
 $consumerSecret="WFXRgkpSCmmifuZveTntxvGpmp5xPWh6JnlxmHALCKH9VGJpUEqGhAAu7w0Hp3Hc";
