@@ -58,7 +58,7 @@ $curl_post_data = [
     'PartyA' => $phone,
     'PartyB' => $BusinessShortCode,
     'PhoneNumber' => $phone,
-    'CallBackURL' => 'https://ww-mpesa.onrender.com/callback.php', // Replace with your real callback
+    'CallBackURL' =>  'CallBackURL' => 'https://9d0e820b57660d.lhr.life/phpSandbox/callback.php',  // Replace with your real callback
     'AccountReference' => 'Test123',
     'TransactionDesc' => 'Testing STK Push'
 ];

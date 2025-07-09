@@ -58,7 +58,7 @@
 		</button>
   		<p><strong>buy </strong> <span id="pop-speed"></span>mbps for <span id="pop-duration"></span> hours at <span id="pop-price"></span> Ksh</p>
 
-		  <form action="https://mpesa-prompt.onrender.com/stk_push.php" method="POST">
+		  <form action="stk_push.php" method="POST">
 		  	<label>enter phone number</label><br>
 		  	 <input type="number" placeholder="your phone number" name="phone"><br><br>
 		  	<input type="submit" class="button" value="buy">
