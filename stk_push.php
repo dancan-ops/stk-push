@@ -24,8 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 
 
-$consumerkey="r0vpx85kSDNu7QmArky40rfpq84yecMQ8fn3BnqMjOhUHLSk";
-$consumerSecret="WFXRgkpSCmmifuZveTntxvGpmp5xPWh6JnlxmHALCKH9VGJpUEqGhAAu7w0Hp3Hc";
+
 
 $BusinessShortCode = '174379';
 $Passkey = 'bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919';
